@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>axios基本使用 | CoooH</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/vuepress/assets/img/favicon.ico">
+    <meta name="description" content="CH的个人博客">
+    <meta name="author" content="CH">
+    <meta name="keywords" content="vuepress,个人博客">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/vuepress/assets/css/0.styles.52453552.css" as="style"><link rel="preload" href="/vuepress/assets/js/app.1c9ecc36.js" as="script"><link rel="preload" href="/vuepress/assets/js/3.ad4f25a4.js" as="script"><link rel="preload" href="/vuepress/assets/js/1.a600933a.js" as="script"><link rel="preload" href="/vuepress/assets/js/23.03143c14.js" as="script"><link rel="prefetch" href="/vuepress/assets/js/10.153764a2.js"><link rel="prefetch" href="/vuepress/assets/js/11.bf200fa8.js"><link rel="prefetch" href="/vuepress/assets/js/12.ec51d722.js"><link rel="prefetch" href="/vuepress/assets/js/13.aeb47126.js"><link rel="prefetch" href="/vuepress/assets/js/14.f86cf225.js"><link rel="prefetch" href="/vuepress/assets/js/15.0af8a760.js"><link rel="prefetch" href="/vuepress/assets/js/16.4befc606.js"><link rel="prefetch" href="/vuepress/assets/js/17.051bd48d.js"><link rel="prefetch" href="/vuepress/assets/js/18.fa27401e.js"><link rel="prefetch" href="/vuepress/assets/js/19.146ceced.js"><link rel="prefetch" href="/vuepress/assets/js/20.1f5b1701.js"><link rel="prefetch" href="/vuepress/assets/js/21.3f8d4556.js"><link rel="prefetch" href="/vuepress/assets/js/22.b1a4901a.js"><link rel="prefetch" href="/vuepress/assets/js/24.c04b07f0.js"><link rel="prefetch" href="/vuepress/assets/js/25.45df3195.js"><link rel="prefetch" href="/vuepress/assets/js/26.49a6a6a2.js"><link rel="prefetch" href="/vuepress/assets/js/27.aadeccdf.js"><link rel="prefetch" href="/vuepress/assets/js/28.a57a7365.js"><link rel="prefetch" href="/vuepress/assets/js/4.1ad1242f.js"><link rel="prefetch" href="/vuepress/assets/js/5.9f578279.js"><link rel="prefetch" href="/vuepress/assets/js/6.bc3aeb41.js"><link rel="prefetch" href="/vuepress/assets/js/7.111eec93.js"><link rel="prefetch" href="/vuepress/assets/js/8.1e566e86.js"><link rel="prefetch" href="/vuepress/assets/js/9.99a17217.js">
+    <link rel="stylesheet" href="/vuepress/assets/css/0.styles.52453552.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-1156296a><div data-v-1156296a><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1156296a data-v-1156296a><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-4e82dffc data-v-1156296a data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>CoooH</h3> <p class="description" data-v-4e82dffc data-v-4e82dffc>CH的个人博客</p> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>CH</span>
+            
+          <!---->
+          2021
+        </a></span></div></div> <div class="hide" data-v-1156296a><header class="navbar" data-v-1156296a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress/" class="home-link router-link-active"><img src="/vuepress/assets/img/cloud.png" alt="CoooH" class="logo"> <span class="site-name">CoooH</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vuepress/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-blog"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/blogs/vue/" class="nav-link router-link-active"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/blogs/javaScript/" class="nav-link"><i class="undefined"></i>
+  javaScript
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/blogs/note/" class="nav-link"><i class="undefined"></i>
+  note
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/categories/git/" class="nav-link"><i class="undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/categories/hexo/" class="nav-link"><i class="undefined"></i>
+  hexo
+</a></li></ul></div></div><div class="nav-item"><a href="/vuepress/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/vuepress/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1156296a></div> <aside class="sidebar" data-v-1156296a><div class="personal-info-wrapper" data-v-828910c6 data-v-1156296a><img src="/vuepress/assets/img/tx.jpg" alt="author-avatar" class="personal-img" data-v-828910c6> <h3 class="name" data-v-828910c6>
+    CH
+  </h3> <div class="num" data-v-828910c6><div data-v-828910c6><h3 data-v-828910c6>13</h3> <h6 data-v-828910c6>Articles</h6></div> <div data-v-828910c6><h3 data-v-828910c6>6</h3> <h6 data-v-828910c6>Tags</h6></div></div> <ul class="social-links" data-v-828910c6></ul> <hr data-v-828910c6></div> <nav class="nav-links"><div class="nav-item"><a href="/vuepress/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-blog"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/blogs/vue/" class="nav-link router-link-active"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/blogs/javaScript/" class="nav-link"><i class="undefined"></i>
+  javaScript
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/blogs/note/" class="nav-link"><i class="undefined"></i>
+  note
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/categories/git/" class="nav-link"><i class="undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/categories/hexo/" class="nav-link"><i class="undefined"></i>
+  hexo
+</a></li></ul></div></div><div class="nav-item"><a href="/vuepress/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/vuepress/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div> <!----></nav> <ul class="sidebar-links"><li><a href="/vuepress/blogs/vue/" aria-current="page" class="sidebar-link">首页</a></li><li><a href="/vuepress/blogs/vue/vue-base.html" class="sidebar-link">Vue基础</a></li><li><a href="/vuepress/blogs/vue/computed.html" class="sidebar-link">computed和watch</a></li><li><a href="/vuepress/blogs/vue/axios-base.html" aria-current="page" class="active sidebar-link">axios基本使用</a></li><li><a href="/vuepress/blogs/vue/cusInstruct.html" class="sidebar-link">自定义命令</a></li><li><a href="/vuepress/blogs/vue/vuex.html" class="sidebar-link">VueX</a></li><li><a href="/vuepress/blogs/vue/module.html" class="sidebar-link">组件通信</a></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4e82dffc data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>axios基本使用</h3> <!----> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>CH</span>
+            
+          <!---->
+          2021
+        </a></span></div></div> <div data-v-1156296a><main class="page"><section><div class="page-title"><h1 class="title">axios基本使用</h1> <div data-v-1ff7123e><i class="iconfont reco-account" data-v-1ff7123e><span data-v-1ff7123e>CH</span></i> <i class="iconfont reco-date" data-v-1ff7123e><span data-v-1ff7123e>9/6/2021</span></i> <i class="iconfont reco-eye" data-v-1ff7123e><span id="/vuepress/blogs/vue/axios-base.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-1ff7123e><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="tags iconfont reco-tag" data-v-1ff7123e><span class="tag-item" data-v-1ff7123e>前端</span><span class="tag-item" data-v-1ff7123e>axios</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">npm</span> <span class="token function">install</span> axios
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="引入"><a href="#引入" class="header-anchor">#</a> 引入</h2> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">import</span> axios <span class="token keyword">from</span> <span class="token string">'axios'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="简单使用"><a href="#简单使用" class="header-anchor">#</a> 简单使用</h2> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">//get</span>
+axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'https://autumnfish.cn/api/joke/list'</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+        params<span class="token operator">:</span><span class="token punctuation">{</span>
+          num<span class="token operator">:</span><span class="token number">3</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'get'</span><span class="token punctuation">,</span>res<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      
+<span class="token comment">//post</span>
+axios<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">&quot;https://autumnfish.cn/api/user/reg&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        username<span class="token operator">:</span> <span class="token string">&quot;jack9581&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'post'</span><span class="token punctuation">,</span>res<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h2 id="传递配置使用"><a href="#传递配置使用" class="header-anchor">#</a> 传递配置使用</h2> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">//get</span>
+<span class="token function">axios</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        method<span class="token operator">:</span> <span class="token string">'get'</span><span class="token punctuation">,</span>
+        url<span class="token operator">:</span><span class="token string">'https://autumnfish.cn/api/joke/list'</span><span class="token punctuation">,</span>
+        params<span class="token operator">:</span><span class="token punctuation">{</span>
+          num<span class="token operator">:</span><span class="token number">5</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'get'</span><span class="token punctuation">,</span>res<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//post</span>
+<span class="token function">axios</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        method<span class="token operator">:</span> <span class="token string">'post'</span><span class="token punctuation">,</span>
+        url<span class="token operator">:</span><span class="token string">'https://autumnfish.cn/api/user/reg'</span><span class="token punctuation">,</span>
+        data<span class="token operator">:</span><span class="token punctuation">{</span>
+          username<span class="token operator">:</span><span class="token string">'jack95813'</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'post'</span><span class="token punctuation">,</span>res<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><h3 id="请求配置"><a href="#请求配置" class="header-anchor">#</a> 请求配置</h3> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token punctuation">{</span>
+   // `url` 是用于请求的服务器 URL
+  <span class="token key atrule">url</span><span class="token punctuation">:</span> <span class="token string">'/user'</span><span class="token punctuation">,</span>
+
+  // `method` 是创建请求时使用的方法
+  <span class="token key atrule">method</span><span class="token punctuation">:</span> <span class="token string">'get'</span><span class="token punctuation">,</span> // default
+
+  // `baseURL` 将自动加在 `url` 前面，除非 `url` 是一个绝对 URL。
+  // 它可以通过设置一个 `baseURL` 便于为 axios 实例的方法传递相对 URL
+  <span class="token key atrule">baseURL</span><span class="token punctuation">:</span> <span class="token string">'https://some-domain.com/api/'</span><span class="token punctuation">,</span>
+
+  // `transformRequest` 允许在向服务器发送前，修改请求数据
+  // 只能用在 'PUT'<span class="token punctuation">,</span> 'POST' 和 'PATCH' 这几个请求方法
+  // 后面数组中的函数必须返回一个字符串，或 ArrayBuffer，或 Stream
+  <span class="token key atrule">transformRequest</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>function (data<span class="token punctuation">,</span> headers) <span class="token punctuation">{</span>
+    // 对 data 进行任意转换处理
+    return data;
+  <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+  // `transformResponse` 在传递给 then/catch 前，允许修改响应数据
+  <span class="token key atrule">transformResponse</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>function (data) <span class="token punctuation">{</span>
+    // 对 data 进行任意转换处理
+    return data;
+  <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+  // `headers` 是即将被发送的自定义请求头
+  <span class="token key atrule">headers</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token key atrule">'X-Requested-With'</span><span class="token punctuation">:</span> <span class="token string">'XMLHttpRequest'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  // `params` 是即将与请求一起发送的 URL 参数
+  // 必须是一个无格式对象(plain object)或 URLSearchParams 对象
+  <span class="token key atrule">params</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token key atrule">ID</span><span class="token punctuation">:</span> <span class="token number">12345</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+   // `paramsSerializer` 是一个负责 `params` 序列化的函数
+  // (e.g. https<span class="token punctuation">:</span>//www.npmjs.com/package/qs<span class="token punctuation">,</span> http<span class="token punctuation">:</span>//api.jquery.com/jquery.param/)
+  <span class="token key atrule">paramsSerializer</span><span class="token punctuation">:</span> function(params) <span class="token punctuation">{</span>
+    return Qs.stringify(params<span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token key atrule">arrayFormat</span><span class="token punctuation">:</span> <span class="token string">'brackets'</span><span class="token punctuation">}</span>)
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  // `data` 是作为请求主体被发送的数据
+  // 只适用于这些请求方法 'PUT'<span class="token punctuation">,</span> <span class="token string">'POST'</span><span class="token punctuation">,</span> 和 'PATCH'
+  // 在没有设置 `transformRequest` 时，必须是以下类型之一：
+  // <span class="token punctuation">-</span> string<span class="token punctuation">,</span> plain object<span class="token punctuation">,</span> ArrayBuffer<span class="token punctuation">,</span> ArrayBufferView<span class="token punctuation">,</span> URLSearchParams
+  // <span class="token punctuation">-</span> 浏览器专属：FormData<span class="token punctuation">,</span> File<span class="token punctuation">,</span> Blob
+  // <span class="token punctuation">-</span> Node 专属： Stream
+  <span class="token key atrule">data</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token key atrule">firstName</span><span class="token punctuation">:</span> <span class="token string">'Fred'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  // `timeout` 指定请求超时的毫秒数(0 表示无超时时间)
+  // 如果请求话费了超过 `timeout` 的时间，请求将被中断
+  <span class="token key atrule">timeout</span><span class="token punctuation">:</span> <span class="token number">1000</span><span class="token punctuation">,</span>
+
+   // `withCredentials` 表示跨域请求时是否需要使用凭证
+  <span class="token key atrule">withCredentials</span><span class="token punctuation">:</span> <span class="token boolean important">false</span><span class="token punctuation">,</span> // default
+
+  // `adapter` 允许自定义处理请求，以使测试更轻松
+  // 返回一个 promise 并应用一个有效的响应 (查阅 <span class="token punctuation">[</span>response docs<span class="token punctuation">]</span>(<span class="token comment">#response-api)).</span>
+  <span class="token key atrule">adapter</span><span class="token punctuation">:</span> function (config) <span class="token punctuation">{</span>
+    /* <span class="token punctuation">...</span> <span class="token important">*/</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+ // `auth` 表示应该使用 HTTP 基础验证，并提供凭据
+  // 这将设置一个 `Authorization` 头，覆写掉现有的任意使用 `headers` 设置的自定义 `Authorization`头
+  <span class="token key atrule">auth</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token key atrule">username</span><span class="token punctuation">:</span> <span class="token string">'janedoe'</span><span class="token punctuation">,</span>
+    <span class="token key atrule">password</span><span class="token punctuation">:</span> <span class="token string">'s00pers3cret'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+   // `responseType` 表示服务器响应的数据类型，可以是 'arraybuffer'<span class="token punctuation">,</span> <span class="token string">'blob'</span><span class="token punctuation">,</span> <span class="token string">'document'</span><span class="token punctuation">,</span> <span class="token string">'json'</span><span class="token punctuation">,</span> <span class="token string">'text'</span><span class="token punctuation">,</span> <span class="token string">'stream'</span>
+  <span class="token key atrule">responseType</span><span class="token punctuation">:</span> <span class="token string">'json'</span><span class="token punctuation">,</span> // default
+
+  // `responseEncoding` indicates encoding to use for decoding responses
+  <span class="token key atrule">// Note</span><span class="token punctuation">:</span> Ignored for `responseType` of 'stream' or client<span class="token punctuation">-</span>side requests
+  <span class="token key atrule">responseEncoding</span><span class="token punctuation">:</span> <span class="token string">'utf8'</span><span class="token punctuation">,</span> // default
+
+   // `xsrfCookieName` 是用作 xsrf token 的值的cookie的名称
+  <span class="token key atrule">xsrfCookieName</span><span class="token punctuation">:</span> <span class="token string">'XSRF-TOKEN'</span><span class="token punctuation">,</span> // default
+
+  // `xsrfHeaderName` is the name of the http header that carries the xsrf token value
+  <span class="token key atrule">xsrfHeaderName</span><span class="token punctuation">:</span> <span class="token string">'X-XSRF-TOKEN'</span><span class="token punctuation">,</span> // default
+
+   // `onUploadProgress` 允许为上传处理进度事件
+  <span class="token key atrule">onUploadProgress</span><span class="token punctuation">:</span> function (progressEvent) <span class="token punctuation">{</span>
+    // Do whatever you want with the native progress event
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  // `onDownloadProgress` 允许为下载处理进度事件
+  <span class="token key atrule">onDownloadProgress</span><span class="token punctuation">:</span> function (progressEvent) <span class="token punctuation">{</span>
+    // 对原生进度事件的处理
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+   // `maxContentLength` 定义允许的响应内容的最大尺寸
+  <span class="token key atrule">maxContentLength</span><span class="token punctuation">:</span> <span class="token number">2000</span><span class="token punctuation">,</span>
+
+  // `validateStatus` 定义对于给定的HTTP 响应状态码是 resolve 或 reject  promise 。如果 `validateStatus` 返回 `true` (或者设置为 `null` 或 `undefined`)，promise 将被 resolve; 否则，promise 将被 rejecte
+  <span class="token key atrule">validateStatus</span><span class="token punctuation">:</span> function (status) <span class="token punctuation">{</span>
+    return status <span class="token punctuation">&gt;</span>= 200 <span class="token important">&amp;&amp;</span> status &lt; 300; // default
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  // `maxRedirects` 定义在 node.js 中 follow 的最大重定向数目
+  // 如果设置为0，将不会 follow 任何重定向
+  <span class="token key atrule">maxRedirects</span><span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">,</span> // default
+
+  // `socketPath` defines a UNIX Socket to be used in node.js.
+  // e.g. '/var/run/docker.sock' to send requests to the docker daemon.
+  // Only either `socketPath` or `proxy` can be specified.
+  // If both are specified<span class="token punctuation">,</span> `socketPath` is used.
+  <span class="token key atrule">socketPath</span><span class="token punctuation">:</span> <span class="token null important">null</span><span class="token punctuation">,</span> // default
+
+  // `httpAgent` 和 `httpsAgent` 分别在 node.js 中用于定义在执行 http 和 https 时使用的自定义代理。允许像这样配置选项：
+  // `keepAlive` 默认没有启用
+  <span class="token key atrule">httpAgent</span><span class="token punctuation">:</span> new http.Agent(<span class="token punctuation">{</span> <span class="token key atrule">keepAlive</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token punctuation">}</span>)<span class="token punctuation">,</span>
+  <span class="token key atrule">httpsAgent</span><span class="token punctuation">:</span> new https.Agent(<span class="token punctuation">{</span> <span class="token key atrule">keepAlive</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token punctuation">}</span>)<span class="token punctuation">,</span>
+
+  // 'proxy' 定义代理服务器的主机名称和端口
+  // `auth` 表示 HTTP 基础验证应当用于连接代理，并提供凭据
+  // 这将会设置一个 `Proxy<span class="token punctuation">-</span>Authorization` 头，覆写掉已有的通过使用 `header` 设置的自定义 `Proxy<span class="token punctuation">-</span>Authorization` 头。
+  <span class="token key atrule">proxy</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token key atrule">host</span><span class="token punctuation">:</span> <span class="token string">'127.0.0.1'</span><span class="token punctuation">,</span>
+    <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">9000</span><span class="token punctuation">,</span>
+    <span class="token key atrule">auth</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token key atrule">username</span><span class="token punctuation">:</span> <span class="token string">'mikeymike'</span><span class="token punctuation">,</span>
+      <span class="token key atrule">password</span><span class="token punctuation">:</span> <span class="token string">'rapunz3l'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  // `cancelToken` 指定用于取消请求的 cancel token
+  // （查看后面的 Cancellation 这节了解更多）
+  <span class="token key atrule">cancelToken</span><span class="token punctuation">:</span> new CancelToken(function (cancel) <span class="token punctuation">{</span>
+  <span class="token punctuation">}</span>)
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br></div></div><h3 id="全局的-axios-默认值"><a href="#全局的-axios-默认值" class="header-anchor">#</a> 全局的 axios 默认值</h3> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>axios<span class="token punctuation">.</span>defaults<span class="token punctuation">.</span>baseURL <span class="token operator">=</span> <span class="token string">'https://api.example.com'</span><span class="token punctuation">;</span>
+axios<span class="token punctuation">.</span>defaults<span class="token punctuation">.</span>headers<span class="token punctuation">.</span>common<span class="token punctuation">[</span><span class="token string">'Authorization'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token constant">AUTH_TOKEN</span><span class="token punctuation">;</span>
+axios<span class="token punctuation">.</span>defaults<span class="token punctuation">.</span>headers<span class="token punctuation">.</span>post<span class="token punctuation">[</span><span class="token string">'Content-Type'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'application/x-www-form-urlencoded'</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="配置的优先顺序"><a href="#配置的优先顺序" class="header-anchor">#</a> 配置的优先顺序</h3> <p>后者将优先于前者：</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">// 使用由库提供的配置的默认值来创建实例</span>
+<span class="token comment">// 此时超时配置的默认值是 `0`</span>
+<span class="token keyword">var</span> instance <span class="token operator">=</span> axios<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 覆写库的超时默认值</span>
+<span class="token comment">// 现在，在超时前，所有请求都会等待 2.5 秒</span>
+instance<span class="token punctuation">.</span>defaults<span class="token punctuation">.</span>timeout <span class="token operator">=</span> <span class="token number">2500</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 为已知需要花费很长时间的请求覆写超时设置</span>
+instance<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/longRequest'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  timeout<span class="token operator">:</span> <span class="token number">5000</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="创建axios实例"><a href="#创建axios实例" class="header-anchor">#</a> 创建axios实例</h3> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">const</span> instance <span class="token operator">=</span> axios<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+	baseURL<span class="token operator">:</span> <span class="token string">'https://api.example.com'</span><span class="token punctuation">,</span>
+	timeout<span class="token operator">:</span> <span class="token number">10</span> <span class="token operator">*</span> <span class="token number">1000</span> <span class="token comment">// 请求超时时间</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 创建实例后更改默认值</span>
+instance<span class="token punctuation">.</span>defaults<span class="token punctuation">.</span>headers<span class="token punctuation">.</span>common<span class="token punctuation">[</span><span class="token string">'Authorization'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token constant">AUTH_TOKEN</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间: </span> <span class="time">2021年9月7日星期二下午2点11分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/vuepress/blogs/vue/computed.html" class="prev">
+            computed和watch
+          </a></span> <span class="next"><a href="/vuepress/blogs/vue/cusInstruct.html">
+            自定义命令
+          </a></span></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-70334359><li class="level-2" data-v-70334359><a href="/vuepress/blogs/vue/axios-base.html#安装" class="sidebar-link reco-side-安装" data-v-70334359>安装</a></li><li class="level-2" data-v-70334359><a href="/vuepress/blogs/vue/axios-base.html#引入" class="sidebar-link reco-side-引入" data-v-70334359>引入</a></li><li class="level-2" data-v-70334359><a href="/vuepress/blogs/vue/axios-base.html#简单使用" class="sidebar-link reco-side-简单使用" data-v-70334359>简单使用</a></li><li class="level-2" data-v-70334359><a href="/vuepress/blogs/vue/axios-base.html#传递配置使用" class="sidebar-link reco-side-传递配置使用" data-v-70334359>传递配置使用</a></li><li class="level-3" data-v-70334359><a href="/vuepress/blogs/vue/axios-base.html#请求配置" class="sidebar-link reco-side-请求配置" data-v-70334359>请求配置</a></li><li class="level-3" data-v-70334359><a href="/vuepress/blogs/vue/axios-base.html#全局的-axios-默认值" class="sidebar-link reco-side-全局的-axios-默认值" data-v-70334359>全局的 axios 默认值</a></li><li class="level-3" data-v-70334359><a href="/vuepress/blogs/vue/axios-base.html#配置的优先顺序" class="sidebar-link reco-side-配置的优先顺序" data-v-70334359>配置的优先顺序</a></li><li class="level-3" data-v-70334359><a href="/vuepress/blogs/vue/axios-base.html#创建axios实例" class="sidebar-link reco-side-创建axios实例" data-v-70334359>创建axios实例</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到 CoooH
+    </div> <div class="operation" style="right:90px;bottom:40px;display:none;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:none;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><APlayer audio="" fixed="true" mini="true" autoplay="autoplay" theme="#b7daff" loop="loop" order="random" preload="auto" volume="0.5" mutex="true" lrc-type="0" list-max-height="250" storage-name="vuepress-plugin-meting" id="aplayer-fixed"></APlayer><!----></div></div>
+    <script src="/vuepress/assets/js/app.1c9ecc36.js" defer></script><script src="/vuepress/assets/js/3.ad4f25a4.js" defer></script><script src="/vuepress/assets/js/1.a600933a.js" defer></script><script src="/vuepress/assets/js/23.03143c14.js" defer></script>
+  </body>
+</html>
