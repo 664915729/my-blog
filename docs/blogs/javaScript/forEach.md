@@ -1,7 +1,8 @@
 ---
 title: forEach()
 author: CH
-date: 2021-9-6
+cover: https://z3.ax1x.com/2021/09/10/hve4wq.jpg
+date: 2021-9-15
 categories:
 - JavaScript
 tags:

@@ -1,6 +1,8 @@
 ---
 title: git基础用法
-date: 2021-9-6
+date: 2021-9-16
+cover: https://z3.ax1x.com/2021/09/10/hvegSg.jpg
+author: CH
 isShowComments: true
 categories:
 - git

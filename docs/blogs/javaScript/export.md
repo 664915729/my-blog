@@ -1,6 +1,8 @@
 ---
 title: export default 和 export
-date: 2021-9-6
+date: 2021-9-15
+author: CH
+cover: https://z3.ax1x.com/2021/09/10/hve2lQ.jpg
 categories:
 - JavaScript
 tags:

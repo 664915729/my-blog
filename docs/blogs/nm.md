@@ -1,10 +1,12 @@
 ---
 title: 寝室大儿专享通道
 author: nm
-date: 2021-9-6
+date: 2021-9-17
+cover: https://z3.ax1x.com/2021/09/10/hv5eln.jpg
 isShowComments: true
+publish: false
 tags:
-- son
+- me
 keys:
 - 'f1887d3f9e6ee7a32fe5e76f4ab80d63'
 ---

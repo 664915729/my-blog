@@ -1,6 +1,8 @@
 ---
 title: splice()添加替换删除
-date: 2021-9-6
+author: CH
+date: 2021-9-15
+cover: https://z3.ax1x.com/2021/09/10/hveRyj.jpg
 categories:
 - JavaScript
 tags:

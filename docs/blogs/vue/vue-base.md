@@ -1,7 +1,8 @@
 ---
 title: Vue基础
 author: CH
-date: 2021-9-5
+cover: https://z3.ax1x.com/2021/09/10/hvRppq.gif
+date: 2021-9-12
 isShowComments: true
 categories:
 - vue
@@ -11,7 +12,7 @@ sticky: 1
 ---
 
 ::: tip
-使用vuepress搭建的第一篇博客 :art:<br>
+vuepress搭建的第一篇博客 :art:<br>
 :::
 
 <!-- more -->

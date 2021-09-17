@@ -1,6 +1,7 @@
 ---
 title: computed和watch
-date: 2021-9-6
+date: 2021-9-17
+cover: https://z3.ax1x.com/2021/09/10/hve5T0.jpg
 isShowComments: true
 categories:
 - vue

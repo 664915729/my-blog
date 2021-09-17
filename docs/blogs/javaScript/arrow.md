@@ -1,7 +1,8 @@
 ---
 title: 箭头函数
 author: CH
-date: 2021-9-6
+date: 2021-9-15
+cover: https://z3.ax1x.com/2021/09/10/hveokV.jpg
 categories:
 - JavaScript
 tags:

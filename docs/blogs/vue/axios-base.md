@@ -1,7 +1,8 @@
 ---
 title: axios基本使用
 author: CH
-date: 2021-9-6
+date: 2021-9-17
+cover: https://z3.ax1x.com/2021/09/10/hve4wq.jpg
 isShowComments: true
 categories:
  - vue
@@ -9,6 +10,7 @@ tags:
  - 前端
  - axios
 ---
+
 
 ## 安装
 
@@ -74,6 +76,7 @@ axios({
 ```
 ### 请求配置
 
+::: details 点击查看
 ```yaml
 {
    // `url` 是用于请求的服务器 URL
@@ -209,6 +212,8 @@ axios({
   })
 }
 ```
+:::
+
 ### 全局的 axios 默认值
 
 ```javascript

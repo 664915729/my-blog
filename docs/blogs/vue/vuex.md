@@ -1,7 +1,8 @@
 ---
 title: VueX
-date: 2021-9-5
+date: 2021-9-17
 isShowComments: true
+cover: https://z3.ax1x.com/2021/09/10/hveokV.jpg
 categories:
  - vue
 tags:

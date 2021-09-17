@@ -4,7 +4,7 @@ const navConf = require('./config/navConf')
 
 
 module.exports = {
-    base: '/vuepress/',
+    // base: '/my-blog/',
     title: 'CoooH',
     head: headConf,
     description: 'CH的个人博客',
@@ -21,37 +21,14 @@ module.exports = {
         nav: navConf, //导航栏
         blogConfig: {
             category: {
-                location: 3, // 在导航栏菜单中所占的位置，默认2
+                location: 2, // 在导航栏菜单中所占的位置，默认2
                 text: '分类' // 默认文案 “分类”
             },
             tag: {
-                location: 4, // 在导航栏菜单中所占的位置，默认3
+                location: 3, // 在导航栏菜单中所占的位置，默认3
                 text: '标签' // 默认文案 “标签”
             }
         }, // 博客配置
-        sidebar: {
-            '/blogs/vue/': [
-                '',
-                'vue-base',
-                'computed',
-                'axios-base',
-                'cusInstruct',
-                'vuex',
-                'module',
-            ],
-            '/blogs/javaScript/': [
-                '',
-                'splice',
-                'export',
-                'forEach',
-                'arrow',
-            ],
-            '/blogs/note/': [
-                '',
-                'hexo',
-                'git-base',
-            ],
-        }, //侧边栏
         subSidebar: 'auto', //自动子侧边栏
         friendLink: [
             {
@@ -74,7 +51,36 @@ module.exports = {
             placeholder: '填写邮箱地址可以及时收到回复噢...',
             visitor: true,
         },// 评论设置
+        record: '浙ICP备2021028639号-1',//ICP 备案文案
+        recordLink: 'https://beian.miit.gov.cn/#/Integrated/index',//ICP 备案指向链接
+        cyberSecurityRecord: '公安部备案',//公安部备案文案
+        cyberSecurityLink: 'http://www.beian.gov.cn/portal/index.do',//公安部备案指向链接
+        startYear: '2021',// 项目开始时间，只填写年份
 
+        //侧边栏
+        // sidebar: {
+        //     '/blogs/vue/': [
+        //         '',
+        //         'vue-base',
+        //         'computed',
+        //         'axios-base',
+        //         'cusInstruct',
+        //         'vuex',
+        //         'module',
+        //     ],
+        //     '/blogs/javaScript/': [
+        //         '',
+        //         'splice',
+        //         'export',
+        //         'forEach',
+        //         'arrow',
+        //     ],
+        //     '/blogs/note/': [
+        //         '',
+        //         'hexo',
+        //         'git-base',
+        //     ],
+        // },
 
         //博客加密
         // keyPage: {
